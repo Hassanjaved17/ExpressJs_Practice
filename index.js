@@ -21,7 +21,7 @@ app.get('/user/:id',(req, res) =>{
     res.send(`User page for user with ID: ${req.params.id}`);
 })
 
-
+// server
 app.listen(PORT,() =>{
     console.log(`server is running on port ${PORT}`);
 })  
