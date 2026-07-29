@@ -10,7 +10,10 @@ app.get('/', (request, response) => {
     response.render('index', { name: 'Hassan' });
 });
 
-
+app.post('/submit', (request, response) => {
+    const { name } = request.body;
+    response.render('index', { name });
+});
 
 app.listen(PORT, () => {        
     console.log(`Server is running on http://localhost:${PORT}`);
