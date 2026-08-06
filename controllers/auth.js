@@ -13,7 +13,7 @@ exports.login = async (email, password) => { // Log in a user with the provided 
     try {
         const user = await findUser(email); // Call the findUser function from the user model to find the user with the provided email
         if (user.password === password) {  // Check if the provided password matches the user's password
-            return "Login successful";
+            return "Login successful"; // Return a success message
         }
         return "Invalid email or password";
     } catch (err) {  // Catch any errors that occur during the login process
